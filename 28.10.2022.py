@@ -22,27 +22,23 @@ class Animal:
         self.progress = 0
         self.alive = True
 
-    def to_study(self):
-        print('Time to study')
-        self.progress += 0.12
-        self.gladness += 3
 
     def to_sleep(self):
-        print('I want to sleep')
-        self.gladness += 3
+        print('Sleep!')
+        self.gladness += 6
 
     def to_chill(self):
         print('Rest time')
         self.progress += 0.1
-        self.gladness += 5
+        self.gladness += 6
 
     def is_alive(self):
-        if self.progress < -0.5:
-            print('Cast out')
-            self.alive = False
-        elif self.gladness <= 0:
-            print('Depression...')
-            self.alive = False
+        if self.progress < 4:
+            print('Good')
+            self.alive = True
+        elif self.gladness <= 5:
+            print('Happy...')
+            self.alive = True
         elif self.progress > 5:
             print('Passed extremaly...')
             self.alive = False
