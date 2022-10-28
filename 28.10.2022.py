@@ -64,10 +64,10 @@ class Animal:
               f'Age animal {self.age} old')
 
 
-stud1 = Animal(name=None, age=4)
-stud2 = Animal(name='Milly', age=3)
-print(stud1)
-print(stud2)
-print(bool(stud1))
-print(bool(stud2))
-print(len(stud1))
+animal1 = Animal(name=None, age=4)
+animal2 = Animal(name='Milly', age=3)
+print(animal1)
+print(animal2)
+print(bool(animal1))
+print(bool(animal2))
+print(len(animal1))
